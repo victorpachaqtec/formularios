@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Index</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">    
     <script src="scripts/main.js"></script>
 </head>
 <body>
@@ -24,7 +25,7 @@
                     <input class="input-form-control" type="email" required name="email" id="email" placeholder="Email">
                 </div>
                 <div class="col-2">
-                    <input class="input-form-control" type="tel" name="telefono" id="telefono" placeholder="Teléfono" pattern="[0-9]*" oninvalid="setCustomValidity('Solo admite números. ')" oninput="setCustomValidity('')">
+                    <input class="input-form-control" type="tel" name="telefono" id="telefono" maxlength="9" placeholder="Teléfono" pattern="[0-9]*" oninvalid="setCustomValidity('Solo admite números. ')" oninput="setCustomValidity('')">
                 </div>
             </div>
             <div class="row">

@@ -11,3 +11,83 @@
 .pq-input:focus{
     background: yellow;
 }
+
+/*Reto Bonus*/
+
+#seccion-formulario {
+  background: #1687a0;
+  height: 578px;
+}
+
+.input-form-control {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  height: 59px;
+  padding: 6px 12px;
+  border: 1px solid #bfbfbf;
+}
+
+.input-form-control:focus {
+    outline: 0;
+    border: 2px solid #B3E5FC;
+}
+
+textarea.input-form-control {
+  height: auto;
+}
+.formulario {
+  max-width: 759px;
+  margin: auto;
+  padding: 15px;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row:after,.row:before {
+  display: table;
+  content: ' ';
+}
+.row:after {
+  content: '';
+  clear: both;
+}
+.col-2 {
+  width: 50%;
+  float: left;
+  padding: 10px 15px;
+  position: relative;
+  min-height: 1px;
+
+}
+.col-1 {
+  width: 100%;
+  padding: 10px 15px;
+  position: relative;
+  min-height: 1px;
+}
+.titulo-seccion {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  padding-top: 34px;
+}
+.text-center{
+    text-align: center;
+}
+.boton-contacto{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 20px;
+    width: 167px;
+    height: 56px;
+    background: #233451;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
