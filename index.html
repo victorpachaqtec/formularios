@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Index</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+    <section id="seccion-formulario">
+        <h2 class="titulo-seccion">Contacto</h2>
+        <form class="formulario" action="mensaje.html" method="POST">
+            <div class="row">
+                <div class="col-2">
+                    <input class="input-form-control" type="text" required name="nombre" id="nombre" maxlength="100" placeholder="Nombre" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')">
+                </div>
+                <div class="col-2">
+                    <input class="input-form-control" type="text" name="apellido" id="apellido" maxlength="100" placeholder="Apellido" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <input class="input-form-control" type="email" required name="email" id="email" placeholder="Email">
+                </div>
+                <div class="col-2">
+                    <input class="input-form-control" type="tel" name="telefono" id="telefono" placeholder="Teléfono" pattern="[0-9]*" oninvalid="setCustomValidity('Solo admite números. ')" oninput="setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <textarea class="input-form-control" required name="descripcion" id="descripcion" cols="30" rows="10" maxlength="250" placeholder="Descripción"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 text-center">
+                   <input  class="boton-contacto" type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
