@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js"></script>
+  </head>
+  <body>
+    <form action="mensaje.html" method="POST">
+      <fieldset>
+        <legend>Registro:</legend>
+        <div class="pq-input-group">
+          <label for="nombre">Nombre:</label>
+          <input class="pq-input" required type="text" id="nombre" name="nombre" pattern="[a-zA-Z]*"/>
+        </div>
+        <div class="pq-input-group">
+          <label for="apellidos">Apellidos:</label>
+          <input class="pq-input" required type="text" id="apellidos" name="apellidos" pattern="[a-zA-Z]*"/>
+        </div>
+        <div class="pq-input-group">
+            <label for="edad">Edad:</label>
+            <input required type="range" value="18" id="edad" name="edad" onchange="updateTextInput(this.value);" min="18" max="80"/>
+            <input class="pq-input" type="number" readonly id="valor_rango" name="valor_rango" value="18">
+        </div>       
+		    <div class="pq-input-group">
+            <label for="dni">DNI:</label>
+            <input class="pq-input" required type="text" id="dni" name="dni" min="8"/>
+        </div>
+        <div class="pq-input-group">
+          <label for="email">Email:</label>
+          <input class="pq-input" required type="email" id="email" name="email" />
+        </div>        
+        <input type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
