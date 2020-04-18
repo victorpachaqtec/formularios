@@ -13,11 +13,11 @@
         <legend>Registro:</legend>
         <div class="pq-input-group">
           <label for="nombre">Nombre:</label>
-          <input class="pq-input" required type="text" id="nombre" name="nombre" pattern="[a-zA-Z]*"/>
+          <input class="pq-input" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')"/>
         </div>
         <div class="pq-input-group">
           <label for="apellidos">Apellidos:</label>
-          <input class="pq-input" required type="text" id="apellidos" name="apellidos" pattern="[a-zA-Z]*"/>
+          <input class="pq-input" required type="text" id="apellidos" name="apellidos" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')"/>
         </div>
         <div class="pq-input-group">
             <label for="edad">Edad:</label>
