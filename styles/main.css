@@ -1,0 +1,13 @@
+
+.pq-input-group label{
+    display: block;
+}
+.pq-input{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.pq-input:focus{
+    background: yellow;
+}
