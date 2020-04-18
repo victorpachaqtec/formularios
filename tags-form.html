@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form action="mensaje.html" method="POST">
+      <fieldset>
+        <legend>Registro:</legend>
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input required type="text" id="nombre" name="nombre" />
+        </div>
+        <div>
+          <label for="grado">Grado de educación</label>
+          <select name="grado" id="grado">
+            <option value="secundaria">Secundaria</option>
+            <option value="primaria">Primaria</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input required type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input required type="password" id="password" name="password" />
+        </div>
+        <div>
+            <strong>Sexo</strong>
+            <input type="radio" checked id="femenino" name="sexo" value="femenino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label><br>         
+        </div>
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
