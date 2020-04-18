@@ -22,7 +22,7 @@
             </div>
             <div class="row">
                 <div class="col-2">
-                    <input class="input-form-control" type="email" required name="email" id="email" placeholder="Email">
+                    <input class="input-form-control" type="email" required name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" oninvalid="setCustomValidity('Solo email. ')" oninput="setCustomValidity('')" />
                 </div>
                 <div class="col-2">
                     <input class="input-form-control" type="tel" name="telefono" id="telefono" maxlength="9" placeholder="Teléfono" pattern="[0-9]*" oninvalid="setCustomValidity('Solo admite números. ')" oninput="setCustomValidity('')">
